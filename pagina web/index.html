@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a Mi Tienda Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito <span id="carrito-count">0</span> artículos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="inicio" class="banner">
+        <h2>¡Descubre nuestras ofertas increíbles!</h2>
+        <p>Productos exclusivos y precios irresistibles. ¡Compra ahora!</p>
+        <button>Ver productos</button>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos">
+        <h2>Productos Destacados</h2>
+        <div class="producto">
+            <h3>Producto 1</h3>
+            <img src="producto1.jpg" alt="Producto 1">
+            <p>Descripción breve del producto.</p>
+            <p>Precio: $100</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Producto 2</h3>
+            <img src="producto2.jpg" alt="Producto 2">
+            <p>Descripción breve del producto.</p>
+            <p>Precio: $150</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <h3>Producto 3</h3>
+            <img src="producto3.jpg" alt="Producto 3">
+            <p>Descripción breve del producto.</p>
+            <p>Precio: $200</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </section>
+
+    <!-- Ofertas especiales -->
+    <section id="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="oferta">
+            <h3>Oferta 1</h3>
+            <p>Compra 2 y obtén 1 gratis.</p>
+        </div>
+        <div class="oferta">
+            <h3>Oferta 2</h3>
+            <p>15% de descuento en pedidos mayores a $300.</p>
+        </div>
+    </section>
+
+    <!-- Carrito de compras -->
+    <section id="carrito">
+        <h2>Mi Carrito</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-items">
+                <tr>
+                    <td colspan="5">Tu carrito está vacío.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="total-carrito">Total: $0</p>
+        <button>Vaciar Carrito</button>
+    </section>
+
+    <!-- Formulario de compra -->
+    <section id="checkout">
+        <h2>Formulario de compra</h2>
+        <form id="formulario-compra" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="direccion">Dirección de envío:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" required>
+
+            <label for="metodo-pago">Método de pago:</label>
+            <select id="metodo-pago" name="metodo-pago" required>
+                <option value="tarjeta">Tarjeta de crédito/débito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia">Transferencia bancaria</option>
+            </select>
+
+            <button type="submit">Realizar pedido</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mi Tienda Online. Todos los derechos reservados.</p>
+        <p>Siguenos en:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Vincula el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
